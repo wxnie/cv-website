@@ -1,0 +1,16 @@
+.footer {
+  background-color: $dark-gray-color;
+  padding: 60px;
+  &__text {
+    @include page-text($semi-font, 18, $light-color, 1);
+    cursor: pointer;
+    span {
+      &:first-of-type {
+        color: lighten($main-color, .5);
+      }
+      &:last-of-type {
+        color: lighten($add-color, .5);
+      }
+    }
+  }
+}
