@@ -1,0 +1,15 @@
+.page-button {
+  @include page-text($semi-font, 16, $text-color, 1);
+  display: block;
+  border: 3px solid $main-color;
+  padding: 9px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .25s;
+  @media (min-width: 992px) {
+    font-size: 20px;
+  }
+  &:hover {
+    transform: scale(105%);
+  }
+}

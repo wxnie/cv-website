@@ -4,6 +4,7 @@
   &__text {
     @include page-text($semi-font, 18, $light-color, 1);
     cursor: pointer;
+    text-align: center;
     span {
       &:first-of-type {
         color: lighten($main-color, .5);
