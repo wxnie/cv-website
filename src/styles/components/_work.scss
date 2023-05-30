@@ -1,0 +1,17 @@
+.work {
+  background: $gray-color;
+  padding: 80px 0 65px;
+  &__header {
+    @extend .page-header;
+    text-align: center;
+  }
+  &__intro {
+    @extend .page-intro;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__skills {
+    margin-top: 40px;
+    padding: 0 30px;
+  }
+}

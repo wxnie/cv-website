@@ -1,0 +1,49 @@
+.experience-content {
+  animation: fade-in .5s;
+  padding: 30px 25px;
+  min-height: 320px;
+  @media (min-width: 576px) {
+    padding: 30px 50px;
+  }
+  &__header {
+    @include page-text($semi-font, 16, $text-color);
+    margin-bottom: 30px;
+    span {
+      color: $main-color;
+    }
+    @media (min-width: 576px) {
+      font-size: 18px;
+    }
+  }
+  &__desc {
+    &-item {
+      @include page-text($medium-font, 14, $text-color, 1.5);
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 8;
+      padding-left: 20px;
+      @media (min-width: 517px) {
+        font-size: 16px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(50%);
+        width:10px;
+        height: 10px;
+        background: url('../../assets/img/arrow.svg') center/100%;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
