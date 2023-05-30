@@ -1,8 +1,8 @@
 .page-header {
   @include page-text($semi-font, 26, $text-color, 1);
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   @media (min-width: 992px) {
-    font-size: 38px
+    font-size: 34px
   }
   span {
     color: $main-color;

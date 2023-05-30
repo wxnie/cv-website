@@ -1,6 +1,6 @@
 .page-intro {
-  @include page-text($medium-font, 18, $text-color);
+  @include page-text($medium-font, 18, $text-color, 1.6);
   @media (min-width: 992px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }

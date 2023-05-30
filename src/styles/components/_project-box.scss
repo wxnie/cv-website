@@ -1,0 +1,79 @@
+.project-box {
+  margin-bottom: 60px;
+  &__img {
+    width: 100%;
+    min-height: 200px;
+    @media (min-width: 992px) {
+      min-height: 300px;
+    }
+    &-wrap {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      @media (min-width: 992px) {
+        min-width: 50%;
+      }
+      @media (min-width: 1200px) {
+        min-width: 500px;
+      }
+    }
+  }
+  &--left {
+    .project-box__content {
+      @media (min-width: 992px) {
+        padding: 20px 0 20px 10px;
+        transform: translateX(10%);
+      }
+    }
+  }
+  &--right {
+    .project-box__content {
+      @media (min-width: 992px) {
+        padding: 20px 10px 20px 0;
+        transform: translateX(-10%);
+      }
+    }
+  }
+  &__content {
+    padding: 20px 10px;
+    @media (min-width: 992px) {
+      padding: 20px 10px 20px 0;
+      transform: translateX(-10%);
+    }
+  }
+  &__title {
+    @include page-text($semi-font, 24, $main-color, 1);
+    margin-bottom: 20px;
+    @media (min-width: 992px) {
+      max-width: 350px;
+      font-size: 30px;
+    }
+  }
+  &__desc {
+    @include page-text($medium-font, 18, $text-color, 1.5);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    @media (min-width: 992px) {
+      padding: 15px;
+      color: $light-color;
+      background: transparentize($dark-gray-color, .2);
+    }
+  }
+  &__link {
+    @include page-text($medium-font, 18, $text-color, 1);
+    position: relative;
+    z-index: 8;
+    padding-left: 40px;
+    cursor: pointer;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: url('../../assets/img/link.svg') center/100%;
+    }
+  }
+}

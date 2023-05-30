@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Banner from './components/Banner'
 import Work from './components/Work'
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main className='app__main'>
         <Banner/>
         <Work/>
+        <Projects/>
       </main>
       <Footer/>
     </div>

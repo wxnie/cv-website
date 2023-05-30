@@ -1,0 +1,15 @@
+.projects {
+  background: $light-color;
+  padding: 80px 0 20px;
+  &__header {
+    @extend .page-header;
+  }
+  &__intro {
+    @extend .page-intro;
+    margin-bottom: 60px;
+    @media (min-width: 992px) {
+      margin-bottom: 40px;
+      max-width: 60%;
+    }
+  }
+}
