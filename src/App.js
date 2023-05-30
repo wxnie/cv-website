@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Banner from './components/Banner'
 import Work from './components/Work'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Banner/>
         <Work/>
         <Projects/>
+        <Contact/>
       </main>
       <Footer/>
     </div>

@@ -1,0 +1,25 @@
+.contact {
+  padding: 80px 0;
+  background-color: $gray-color;
+  &__header {
+    @extend .page-header;
+    text-align: center
+  }
+  &__intro {
+    @extend .page-intro;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__button {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform .25s;
+    &:hover {
+      transform: scale(108%);
+    }
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
