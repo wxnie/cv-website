@@ -33,7 +33,7 @@ function Header() {
         </span>
       </div>
       <nav className={`header__nav header__nav--${currentMod}`}>
-        <ul className="header__list d-flex flex-column flex-md-row align-items-center">
+        <ul className="header__list d-flex flex-column justify-content-center justify-content-md-start flex-md-row align-items-center">
           {menuItems.map((menuItem, index) => {
             const ClassMod = activeIndex === index ? 'active' : 'default'
             return (
