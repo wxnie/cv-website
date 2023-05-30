@@ -1,12 +1,15 @@
 import { useState } from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 import logo from '../assets/img/logo.svg'
 
 function Header() {
   const menuItems = [
-    {id: 1, text: 'Experience', link: '#experience'},
-    {id: 2, text: 'Projects', link: '#projects'},
-    {id: 3, text: 'Contact', link: '#contact'},
+    {id: 1, text: 'Experience', link: 'experience'},
+    {id: 2, text: 'Projects', link: 'projects'},
+    {id: 3, text: 'Contact', link: 'contact'},
   ]
+
+  const [activeIndex, setActiveIndex] = useState()
 
   const [open, setOpen] = useState(false)
 
@@ -14,6 +17,10 @@ function Header() {
 
   const handleClick = () => {
     setOpen(current => !current)
+  }
+
+  const changeActive = (num) => () => {
+    setActiveIndex(num)
   }
 
 
@@ -27,10 +34,21 @@ function Header() {
       </div>
       <nav className={`header__nav header__nav--${currentMod}`}>
         <ul className="header__list d-flex flex-column flex-md-row align-items-center">
-          {menuItems.map((menuItem) => {
+          {menuItems.map((menuItem, index) => {
+            const ClassMod = activeIndex === index ? 'active' : 'default'
             return (
-              <li key={menuItem.id} className="header__item">
-                <a href={menuItem.link} className="header__link">{menuItem.text}</a>
+              <li key={menuItem.id} className={`header__item header__item--${ClassMod}`}>
+                <Link
+                  onClick={changeActive(index)}
+                  to={menuItem.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={200}
+                  className="header__link"
+                >
+                  {menuItem.text}
+                </Link>
               </li>
             )
           })}

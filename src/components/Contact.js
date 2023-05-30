@@ -3,7 +3,7 @@ import Github from '../assets/img/github.svg'
 
 function Contact() {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10 col-xl-5 d-flex flex-column align-items-center">

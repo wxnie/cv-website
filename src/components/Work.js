@@ -5,7 +5,7 @@ function Work() {
   const TechStack = ['HTML', 'Vue.js', 'SCSS', 'HTML', 'SQL', 'Bootstrap', 'WordPress', 'React.js', 'React Native']
 
   return (
-    <section className="work">
+    <section id="experience" className="work">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-9 col-xl-7">

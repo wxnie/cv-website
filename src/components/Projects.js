@@ -28,7 +28,7 @@ function Projects() {
     },
   ]
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-xl-10">
