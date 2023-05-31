@@ -32,7 +32,7 @@ function Projects() {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-xl-10">
-            <h2 className="projects__header">Some <span>Projects</span> I&apos;ve worked on</h2>
+            <h2 className="projects__header">Some <span>Projects</span> I&apos;ve&nbsp;worked&nbsp;on</h2>
             <p className="projects__intro">Check out some websites I created during my commercial career, some of these were created on my own and others are effects of teamwork.</p>
           </div>
         </div>
