@@ -21,6 +21,7 @@ function Header() {
 
   const changeActive = (num) => () => {
     setActiveIndex(num)
+    setOpen(current => !current)
   }
 
 

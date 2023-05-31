@@ -5,7 +5,7 @@ function Experience() {
   const ExperienceData = [
     {
       id: 1, 
-      company: "Follow Vision", 
+      company: "Follow&nbsp;Vision", 
       title: "Web Developer",
       tasks: [
         'Creating and expanding websites based on WordPress using PHP, JS, and SCSS',
@@ -16,7 +16,7 @@ function Experience() {
     },
     {
       id: 2, 
-      company: "Sun Group", 
+      company: "Sun&nbsp;Group", 
       title: "Junior Front-end developer",
       tasks: [
         'Expanding MediaExpert e-shop with PHP, JS, and CSS',
@@ -27,7 +27,7 @@ function Experience() {
     },
     {
       id: 3, 
-      company: "STX Next", 
+      company: "STX&nbsp;Next", 
       title: "Junior JavaScript Developer",
       tasks: [
         'Building website UI using React.js and Styled Components',
@@ -53,7 +53,7 @@ function Experience() {
         <ul className="experience__bar-list d-flex flex-md-column justify-content-between">
           {ExperienceData.map((Job, index) => {
             const ClassMod = activeIndex === index ? 'active' : 'default'
-            return <li key={Job.id} onClick={handleClick(Job, index)} className={`experience__bar-item experience__bar-item--${ClassMod} d-flex align-items-center justify-content-center justify-content-md-start`}>{Job.company}</li>
+            return <li key={Job.id} onClick={handleClick(Job, index)} className={`experience__bar-item experience__bar-item--${ClassMod} d-flex align-items-center justify-content-center justify-content-md-start`} dangerouslySetInnerHTML={{ __html: Job.company }}></li>
           })}
         </ul>
       </div>
