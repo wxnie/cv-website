@@ -2,7 +2,7 @@ import Experience from "./Experience"
 import SkillBox from "./SkillBox"
 
 function Work() {
-  const TechStack = ['HTML', 'Vue.js', 'SCSS', 'HTML', 'SQL', 'Bootstrap', 'WordPress', 'React.js', 'React Native']
+  const TechStack = ['HTML', 'CSS', 'SCSS', 'JavaScript (ES6)', 'PHP', 'Vue.js', 'GIT', 'WordPress', 'ACF', 'WPML', 'BEM', 'Bootsrap', 'MySQL', 'Barba.js', 'React', 'React Native']
 
   return (
     <section id="experience" className="work">
