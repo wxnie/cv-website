@@ -19,7 +19,7 @@ function Experience() {
       company: "Sun&nbsp;Group", 
       title: "Junior Front-end developer",
       tasks: [
-        'Expanding MediaExpert e-shop with PHP, JS, and CSS',
+        'Expanding e-shop with PHP, JS, and CSS',
         'Product database updates using MySql',
         'Creating fully responsive landing pages for products and promotions',
         'Fixing possible problems appearing on the website'
